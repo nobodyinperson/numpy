@@ -1,3 +1,30 @@
+# RPM Package for SailfishOS 
+This branch can be used to build NumPy on a SailfishOS device.
+
+The following packages are needed for the build process:
+
+```
+python3-cython
+python3-devel
+```
+
+You might only get them on [OpenRepos.net](https://openrepos.net)
+
+Also make sure to initialize and update the submodules:
+
+```bash
+git submodule update --init --recursive
+```
+
+To build the RPM package, run
+
+```bash
+python3 setup.py bdist_rpm
+```
+
+It takes pretty long on a Jolla Phone, but should eventually succeed and there
+will be an RPM package under `dist/`.
+
 # <img alt="NumPy" src="https://cdn.rawgit.com/numpy/numpy/master/branding/icons/numpylogo.svg" height="60">
 
 [![Travis](https://img.shields.io/travis/numpy/numpy/master.svg?label=Travis%20CI)](

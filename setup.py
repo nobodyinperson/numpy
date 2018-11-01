@@ -362,7 +362,7 @@ def setup_package():
             ]
 
     metadata = dict(
-        name = 'numpy',
+        name = 'python3-numpy' if 'bdist_rpm' in sys.argv else 'numpy',
         maintainer = "NumPy Developers",
         maintainer_email = "numpy-discussion@python.org",
         description = DOCLINES[0],

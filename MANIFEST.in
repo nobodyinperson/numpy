@@ -37,3 +37,6 @@ prune benchmarks/numpy
 # Exclude generated files
 prune */__pycache__
 global-exclude *.pyc *.pyo *.pyd *.swp *.bak *~
+
+# fix for RPM package build
+recursive-include numpy *.src
