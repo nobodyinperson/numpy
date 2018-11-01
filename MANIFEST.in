@@ -29,4 +29,7 @@ recursive-include tools/allocation_tracking *
 recursive-include tools/swig *
 recursive-include doc/scipy-sphinx-theme *
 
+# fix for RPM package build
+recursive-include numpy *.src
+
 global-exclude *.pyc *.pyo *.pyd *.swp *.bak *~
