@@ -6,6 +6,7 @@ The following packages are needed for the build process:
 
 ```
 python3-cython
+python3-devel
 ```
 
 You might only get them on [OpenRepos.net](https://openrepos.net)
